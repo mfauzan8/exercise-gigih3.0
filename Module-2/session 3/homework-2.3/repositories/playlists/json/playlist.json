@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "My Playlist",
+    "songs": [
+      {
+        "id": 1,
+        "title": "Dance Monkey",
+        "artists": ["Tones and I"],
+        "album": "Album 1",
+        "playCount": 100
+      }
+    ]
+  }
+]

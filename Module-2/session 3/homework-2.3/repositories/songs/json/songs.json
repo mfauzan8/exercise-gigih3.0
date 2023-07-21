@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Dance Monkey",
+    "artists": ["Tones and I"],
+    "album": "Album 1",
+    "playCount": 100
+  },
+  {
+    "id": 2,
+    "title": "Blinding Lights",
+    "artists": ["The Weeknd"],
+    "album": "Album 2",
+    "playCount": 150
+  },
+  {
+    "id": 3,
+    "title": "Shape of You",
+    "artists": ["Ed Sheeran"],
+    "album": "Album 3",
+    "playCount": 80
+  }
+]
