@@ -7,78 +7,115 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <h1>Gitify</h1>
-        <ul>
-          <li><a href="#">Show all songs</a></li>
-          <li><a href="#">Recently Played Song</a></li>
-          <li><a href="#">Add to playlist</a></li>
-        </ul>
+        <div class="top-sidebar">
+          <a href="#" class="border-top-side">
+            <span>
+              <img src="./svg/home.svg" alt="home" />
+            </span>
+            Home
+          </a>
+          <a href="#" class="border-top-side">
+            <span>
+              <img src="./svg/search.svg" alt="search" />
+            </span>
+            Cari
+          </a>
+        </div>
+        <div class="second-sidebar">
+          <div href="#" class="border-top-side">
+            <span>
+              <img src="./svg/playlist.svg" alt="playlist" />
+            </span>
+            Playlist
+            <a href="#">
+              <img src="./svg/plus.svg" alt="plus" />
+            </a>
+          </div>
+          <div class="playlist-container">
+            <h3>Buat playlist pertamamu</h3>
+            <h4>Caranya mudah, kami akan membantumu</h4>
+            <button class="btn-white">Buat Playlist</button>
+          </div>
+        </div>
       </div>
       <div class="content">
         <div class="card">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt="Card Image"
-          />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 1</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 2</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 3</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 4</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 5</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 6</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 7</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
         <div class="card">
-          <img src="image.jpg" alt="Card Image" />
+          <img src="https://picsum.photos/100" alt="Card Image" />
           <div class="card-content">
             <h2>Song 8</h2>
-            <p>This is the content of the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
+            <a href="#" class="btn">+ Add to playlist</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/100" alt="Card Image" />
+          <div class="card-content">
+            <h2>Song 9</h2>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
+            <a href="#" class="btn">+ Add to playlist</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/100" alt="Card Image" />
+          <div class="card-content">
+            <h2>Song 10</h2>
+            <p>This is the content of the card. Lorem ipsum dolor sit </p>
             <a href="#" class="btn">+ Add to playlist</a>
           </div>
         </div>
