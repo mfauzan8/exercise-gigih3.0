@@ -18,19 +18,17 @@ const HomePage = ({ token }) => {
 
     useEffect(() => {
         const recomendations = async () => {
-            tab.map((item) => {
-                axios
-                    .get(`https://api.spotify.com/v1/recommendations?${item.link}seed_genres=classical%2Ccountry&seed_tracks=0c6xIDDpzE81m2q797ordA`, {
-                        headers: {
-                            'Content-Type': 'application/json',
-                            Authorization: `Bearer ${token}`,
-                        },
-                    })
-                    .then((response) => {
-                        console.log(response.data)
-                        setData(response.data.tracks)
-                    })
-            })
+            const filteredTabs = tab.filter((item) => item.status === true);
+            await axios
+                .get(`https://api.spotify.com/v1/recommendations?${filteredTabs[0].link}seed_genres=classical%2Ccountry&seed_tracks=0c6xIDDpzE81m2q797ordA`, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${token}`,
+                    },
+                })
+                .then((response) => {
+                    setData(response.data.tracks)
+                })
         }
         recomendations()
     }, [tab])

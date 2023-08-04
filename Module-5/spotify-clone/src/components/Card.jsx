@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Card = ({ dataAlbum, data }) => {
-    console.log(data)
 
     return (
         <div className='card-container'>

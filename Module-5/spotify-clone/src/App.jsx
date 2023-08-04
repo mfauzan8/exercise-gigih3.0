@@ -28,7 +28,7 @@ function App() {
       window.localStorage.setItem('token', accessToken);
     }
     setToken(accessToken);
-  }, []);
+  }, [])
 
   return (
     <>
